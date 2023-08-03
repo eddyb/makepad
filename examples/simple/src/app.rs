@@ -100,7 +100,7 @@ live_design!{
                 draw_label: {
                     color: #f
                 },
-                label: "Counter: 0"
+                label: "Counter | عداد [ar] | काउंटर [hi] | 计数器 [zh-cn] : 0"
             }
         }
     }
@@ -175,7 +175,7 @@ impl AppMain for App{
             // Get a reference to our label from the frame, update its text, and schedule a redraw
             // for it.
             let label = self.ui.get_label(id!(label1));
-            label.set_label(&format!("Counter: {}", self.counter));
+            label.set_label(&format!("Counter | عداد [ar] | काउंटर [hi] | 计数器 [zh-cn] : {}", self.counter));
             label.redraw(cx);
         }
     }
